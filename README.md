@@ -6,6 +6,36 @@ This project demonstrates how to automatically back up an EC2 instance using AWS
 
 ---
 
+## 📦 Requirements
+
+To implement this project, you need the following:
+
+### 🔧 AWS Services
+- Amazon EC2
+- AWS Backup
+- AWS IAM (for backup and restore permissions)
+
+### ✅ IAM Permissions
+Ensure your IAM role or user has the following permissions:
+- `ec2:DescribeInstances`
+- `backup:CreateBackupPlan`
+- `backup:StartBackupJob`
+- `backup:CreateBackupVault`
+- `backup:CopyFromBackupVault`
+- `backup:CopyToBackupVault`
+- `iam:PassRole`
+
+### 🌍 Regions
+- Source Region: `ap-south-1` (Mumbai) or your selected region
+- Destination Region: e.g., `us-east-1` (N. Virginia) or any other
+
+### 💻 Tools
+- AWS Management Console (or AWS CLI)
+- Internet connection to access the AWS Console
+
+---
+
+
 ## 🛠️ Project Workflow
 
 ### 1. EC2 Instance Setup
