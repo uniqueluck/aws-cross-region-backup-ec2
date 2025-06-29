@@ -117,7 +117,7 @@ A detailed PDF summary report is included in this repository:
 
 This project showcases how a well-structured AWS Backup plan, combined with cross-region replication, can help build **resilient and disaster-ready cloud infrastructure**.
 
-If you found this helpful or have questions, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile/) or check out more projects in my GitHub profile.
+If you found this helpful or have questions, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/bhagyashribobade/) or check out more projects in my GitHub profile.
 
 ---
 
