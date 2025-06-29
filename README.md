@@ -12,7 +12,9 @@ This project demonstrates how to automatically back up an EC2 instance using AWS
 - Launched an EC2 instance in the **primary AWS region**.
 - Uploaded sample files to test data integrity during backup and recovery.
 
-![EC2 Instance Details](./screenshots/ec2_instance_details.png)
+![EC2 Instance Details](Screenshots/ec2-details.png)
+
+![EC2 Instance Details](Screenshots/ec2_files_data.png)
 
 ---
 
@@ -22,10 +24,10 @@ Created two backup vaults:
 - One in the **destination region** for cross-region replication.
 
 #### 🔹 Source Vault:
-![Source Backup Vault](./screenshots/1_Source_Backup_Vault.png)
+![Source Backup Vault](Screenshots/1_Source_backup_vaults.png)
 
 #### 🔹 Destination Vault:
-![Destination Backup Vault](./screenshots/2_Destination_Backup_Vault.png)
+![Destination Backup Vault](Screenshots/2_Destination_Backup_Vault.png)
 
 ---
 
@@ -34,13 +36,14 @@ Created two backup vaults:
 - Assigned the EC2 instance as a resource.
 - Enabled lifecycle rules to transition backups to cold storage after 30 days.
 
-![Backup Plan Configuration](./screenshots/5_Backup_Plan_CrossRegion_Configuration.png)
+![Backup Plan Configuration](Screenshots/3_Backup_Plan_CrossRegion_Copy.png)
 
 ---
 
 ### 4. Cross-Region Backup Replication
 - Configured the backup plan to replicate backups to another AWS region.
 - Selected a destination vault and defined the copy frequency and retention.
+  ![Cross-Region Backup Replication](Screenshots/3_Backup_Plan_CrossRegion_Copy.png)
 
 ---
 
@@ -48,7 +51,8 @@ Created two backup vaults:
 - Triggered an on-demand backup for immediate testing.
 - Verified job completion status in the **Backup Jobs** section.
 
-![Backup Jobs Successful](./screenshots/3_Backup_Jobs_Successful_Completion.png)
+![Backup Jobs Successful](Screenshots/backup_job.png)
+![Backup Jobs health](Screenshots/backup_job_health.png)
 
 ---
 
@@ -56,7 +60,7 @@ Created two backup vaults:
 - Switched to the **destination region**.
 - Verified that the replicated recovery point was created in the vault.
 
-![Recovery Point in Destination](./screenshots/4_EC2_Recovery_Point_Destination.png)
+![Recovery Point in Destination](Screenshots/4_EC2_Recovery_Point_Destination.png)
 
 ---
 
