@@ -38,6 +38,8 @@ Ensure your IAM role or user has the following permissions:
 
 ## 🛠️ Project Workflow
 
+![Project Workflow](Screenshots/AWS_Backup_flow_diagram.png)
+
 ### 1. EC2 Instance Setup
 - Launched an EC2 instance in the **primary AWS region**.
 - Uploaded sample files to test data integrity during backup and recovery.
